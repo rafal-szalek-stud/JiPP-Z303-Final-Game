@@ -118,6 +118,6 @@ Po zakończeniu serii możesz wybrać wyświetlenie logu (komentator), który po
 
 - zgaduje słowa ze słownika,
 
-- po każdej próbie zawęża listę kandydatów na podstawie feedbacku (jak solver Wordle),
+- po każdej próbie zawęża listę kandydatów na podstawie feedbacku (solver Wordle),
 
 - pokazuje swoje próby i przechodzi 3 rundy.
