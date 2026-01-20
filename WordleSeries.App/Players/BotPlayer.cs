@@ -49,5 +49,17 @@ public sealed class BotPlayer : PlayerBase
             .Where(candidate => keepCandidatePredicate(candidate, guess))
             .ToList();
     }
+    public void OnFeedbackComputed(object? sender, FeedbackComputedEventArgs e)
+    {
+        if (e.PlayerNick != this.Nick) return;
+        if (_lastGuess is null) return;
+
+        string guess = _lastGuess;
+        var fb = e.Feedback;
+
+        _candidates = _candidates
+            .Where(candidate => WordleEvaluator.Evaluate(candidate, guess).Equals(fb))
+            .ToList();
+    }
 }
 

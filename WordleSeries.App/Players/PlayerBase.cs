@@ -37,5 +37,11 @@ public abstract class PlayerBase : IPlayer
         TotalScore = TotalScore + add;
         ScoreChanged?.Invoke(this, TotalScore);
     }
+    public void ResetForNewRound(HealthPoints initialHp)
+    {
+        HP = initialHp;
+        HpChanged?.Invoke(this, HP);
+    }
+
 }
 

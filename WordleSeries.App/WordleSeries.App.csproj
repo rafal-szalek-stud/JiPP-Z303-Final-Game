@@ -10,7 +10,9 @@
   <ItemGroup>
     <None Remove="Resources\answers_5.txt" />
     <None Remove="Resources\guesses_5.txt" />
-    <None Remove="Resources\ranking.json" />
+    <None Remove="Resources\ranking_120.json" />
+    <None Remove="Resources\ranking_300.json" />
+    <None Remove="Resources\ranking_60.json" />
   </ItemGroup>
 
   <ItemGroup>
@@ -20,13 +22,15 @@
     <Content Include="Resources\guesses_5.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Resources\ranking.json">
+    <Content Include="Resources\ranking_120.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Logging\" />
+    <Content Include="Resources\ranking_300.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Resources\ranking_60.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
 </Project>
